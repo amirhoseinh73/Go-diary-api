@@ -17,8 +17,8 @@ services:
     environment:
       DB_VENDOR: POSTGRES
       DB_ADDR: postgres
-      DB_DATABASE: diray_api
-      DB_USER: diray
+      DB_DATABASE: diary_api
+      DB_USER: diary
       DB_SCHEMA: public
       DB_PASSWORD: diary
     build:
