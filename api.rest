@@ -1,0 +1,17 @@
+###
+POST http://localhost:4030/auth/register
+Content-Type: application/json
+
+{
+  "username": "amirhoseinh73",
+  "password": "123456"
+}
+
+###
+POST http://localhost:4030/auth/login
+Content-Type: application/json
+
+{
+  "username":"amirhoseinh73",
+  "password":"123456"
+}
