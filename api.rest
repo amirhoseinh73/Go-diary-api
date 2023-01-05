@@ -15,3 +15,17 @@ Content-Type: application/json
   "username":"amirhoseinh73",
   "password":"123456"
 }
+
+###
+POST http://localhost:4030/api/entry
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVfYXQiOjE2NzI5NjQ3MjEsImlkIjoxLCJpc3N1ZWRfYXQiOjE2NzI5NjI3MjF9.zyOufdPWzcueng84RNIotiy7U4Tnq-5QLuPFvd6_yVI
+
+{
+  "content": "content 2"
+}
+
+###
+GET http://localhost:4030/api/entry
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVfYXQiOjE2NzI5NjQ3MjEsImlkIjoxLCJpc3N1ZWRfYXQiOjE2NzI5NjI3MjF9.zyOufdPWzcueng84RNIotiy7U4Tnq-5QLuPFvd6_yVI

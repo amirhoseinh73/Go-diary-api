@@ -16,3 +16,9 @@
 ## Register API
 
 > POST: /auth/register --> diary_api/controller.Register
+
+## add Entry
+
+## get all Entries
+POST: /api/entry --> diary_api/controller.AddEntry
+GET: /api/entry --> diary_api/controller.GetAllEntries
