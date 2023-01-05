@@ -1,0 +1,31 @@
+version: '3'
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: diary_api
+      POSTGRES_USER: diary
+      POSTGRES_PASSWORD: diary
+  diray_app:
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: diray_api
+      DB_USER: diray
+      DB_SCHEMA: public
+      DB_PASSWORD: diary
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - 4030:4030
+    depends_on:
+      - postgres
