@@ -5,8 +5,8 @@
 1. Dockerize Go &check;
 2. Registration with a username and password &check;
 3. Login with a username and password &check;
-4. Create a new diary entry
-5. Retrieve all diary entries
+4. Create a new diary entry &check;
+5. Retrieve all diary entries &check;
 
 
 ## Login API
